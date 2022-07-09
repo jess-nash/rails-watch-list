@@ -8,5 +8,9 @@
 @import "font-awesome";
 
 // Your CSS partials
-@import "components/index";
+@import "components/index"; // imports ALL imports inside _index.scss
 @import "pages/index";
+
+a {
+  text-decoration: none;
+}
