@@ -1,7 +1,9 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
-  <div class="container text-center">
-    <h1>Save any kind of <strong>movies</strong></h1>
-    <p>& chill</p>
+  <div class="flex-container">
+    <div class="banner-text text-center">
+      <h1>Save any kind of <strong>movies</strong></h1>
+      <p>& chill</p>
+    </div>
   </div>
 </div>
 
@@ -12,7 +14,7 @@
     <%= link_to "Create list", new_list_path, class:"btn btn-flat btn-right"%>
   </div>
 
-    <div class="cards">
+    <div class="cards-lists">
       <% @lists.each do |list| %>
         <%= link_to list_path(list) do %>
           <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.cover_url %>)">

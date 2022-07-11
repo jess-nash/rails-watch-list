@@ -1,10 +1,6 @@
 // Specific CSS for your home-page
 .lists-collection {
   padding-top: 20px;
-  h1 {
-    text-align: left;
-    font-size: 30px;
-  }
 }
 
 .list-header {
@@ -12,10 +8,60 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  h1 {
+    text-align: left;
+    font-size: 30px;
+  }
 }
 
-.bookmark-list-header {
+.bookmarks-flex-container {
   padding: 15px;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;}
+  align-items: flex-start;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.review-form-container {
+  background: white;
+  padding: 20px;
+  width: auto;
+
+  .review-form {
+    width: 300px;
+  }
+
+  h1 {
+      font-size: 18px;
+      font-weight: 800;
+  }
+}
+
+
+.bookmarks-container-right {
+  width: 400px;
+  padding: 15px;
+
+  .list-actions {
+  padding: 15px;
+  }
+}
+
+
+.new-list-flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.new-list-container {
+  background: rgba(254, 241, 202, 0.409);
+  border: 1px #65625b73 solid;
+  padding: 20px;
+  margin: 20px;
+  width: 40rem;
+
+  .new-list {
+    padding: 15px;
+    width: 100%;
+  }
+}
