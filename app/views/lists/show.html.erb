@@ -1,32 +1,36 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)), url(<%= @list.cover_url %>);">
-  <div class="list-name-container">
-    <h1><%= @list.name %></h1>
-    <div class="movie-count btn btn-primary">
-      <h2>
-        <% if @list.bookmarks.count == 1 %>
-          <%= @list.bookmarks.count %> movie
-        <% else %>
-          <%= @list.bookmarks.count %> movies
-        <% end %>
-      </h2>
+    <div class="flex-container">
+      <h1><%= @list.name %></h1>
+      <div id="movie-count-top-right">
+        <p id="movie-count">
+          <% if @list.bookmarks.count == 1 %>
+            <%= @list.bookmarks.count %> movie
+          <% else %>
+            <%= @list.bookmarks.count %> movies
+          <% end %>
+        </p>
+      </div>
     </div>
-  </div>
 </div>
 
 <div class="container lists-collection text-center">
-  <div class="list-header">
+  <div class="bookmark-list-header">
     <%= link_to 'New Bookmark', new_list_bookmark_path(list_id: @list), class:'btn btn-flat btn-right' %>
   </div>
 
     <div class="cards">
       <% @list.bookmarks.each do |bookmark| %>
-        <div class="card" style="width: 18rem">
+        <div class="card-movie">
         <%= image_tag bookmark.movie.poster_url, alt: "", width: 200, class:"card-img-top" %>
-        <div class="card-body">
-            <h3><%= bookmark.movie.title %></h3>
-            <h5><%= bookmark.movie.overview %></h5>
-            <p><i class="fa-solid fa-quote-left"></i><%= bookmark.comment %><i class="fa-solid fa-quote-right"></i></p>
-            <%= link_to 'Delete', bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure?" }, class:"btn btn-danger"%>
+        <div class="card-movie-infos">
+          <div class="card-movie-details">
+            <h2 id="card-movie-title"><%= bookmark.movie.title %></h2>
+            <p id="card-movie-overview"><%= bookmark.movie.overview %></p>
+          </div>
+          <div class="card-movie-footer">
+            <p id="card-movie-comment"><i class="fa-solid fa-quote-left"></i> <%= bookmark.comment %> <i class="fa-solid fa-quote-right"></i></p>
+            <%= link_to 'Delete', bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure?" }, id:"card-movie-delete"%>
+          </div>
         </div>
         </div>
       <% end %>

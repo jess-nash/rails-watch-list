@@ -14,12 +14,8 @@
   justify-content: space-between;
 }
 
-.list-name-container {
+.bookmark-list-header {
+  padding: 15px;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.movie-count {
-}
+  flex-direction: row;
+  justify-content: flex-end;}

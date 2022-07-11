@@ -27,6 +27,64 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.card-movie {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 25rem;
+
+  > img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+.card-movie-infos {
+  padding: 12px;
+}
+
+.card-movie-details {
+  padding: 5px;
+  display: grid;
+  text-align: left;
+
+  #card-movie-title {
+    font-size: 18px;
+    font-weight: 1000;
+    margin: 0;
+
+  }
+
+  #card-movie-overview {
+    font-size: 12px;
+    opacity: .7;
+    margin: 0;
+  }
+}
+
+
+.card-movie-footer {
+  padding: 5px;
+  font-size: 12;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  align-items: center;
+
+  #card-movie-comment {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  #card-movie-delete {
+    color: red;
+    font-size: 12px;
+  }
+}
+
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
