@@ -2,7 +2,8 @@
 <div class="form">
   <%= simple_form_for [ @list ] do |l| %>
       <%= l.input :name, placeholder: 'List name' %>
-      <%= l.input :cover_url, placeholder: 'Cover Image URL' %>
+      <%= f.input :photo, as: :file %>
+      <%#= l.input :cover_url, placeholder: 'Cover Image URL' %>
       <%= l.submit class: "btn btn-primary" %>
       <%#= link_to "Cancel", lists_path, class: "btn btn-danger"  %>
   <% end %>
