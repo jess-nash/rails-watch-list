@@ -8,13 +8,13 @@
 </div>
 
 
-<div class="container lists-collection text-center">
-  <div class="list-header">
-    <h1>My Lists</h1>
+<div class="container text-center">
+  <div class="page-header-spaced">
+    <h1>All Lists</h1>
     <%= link_to "Create list", new_list_path, class:"btn btn-flat btn-right"%>
   </div>
 
-    <div class="cards-lists">
+    <div class="list-card-container">
       <% @lists.each do |list| %>
         <%= link_to list_path(list) do %>
           <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.cover_url %>)">
@@ -22,5 +22,11 @@
           </div>
         <% end %>
       <% end %>
+    </div>
+
+    <div class="form-container">
+      <div class="form-styled">
+        <%= render "shared/form_new_list", list: @list %>
+      </div>
     </div>
 </div>

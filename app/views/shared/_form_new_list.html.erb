@@ -1,15 +1,9 @@
-<div class="new-list-flex-container">
-  <div class="new-list-container">
-    <div class="new-list">
-      <h1>Create new list</h1>
-      <div class="form">
-        <%= simple_form_for [ @list ] do |l| %>
-            <%= l.input :name, placeholder: 'List name' %>
-            <%= l.input :cover_url, placeholder: 'Cover Image URL' %>
-            <%= l.submit class: "btn btn-primary" %>
-            <%= link_to "Cancel", lists_path, class: "btn btn-danger"  %>
-        <% end %>
-      </div>
-    </div>
-  </div>
+<h1>Create new list</h1>
+<div class="form">
+  <%= simple_form_for [ @list ] do |l| %>
+      <%= l.input :name, placeholder: 'List name' %>
+      <%= l.input :cover_url, placeholder: 'Cover Image URL' %>
+      <%= l.submit class: "btn btn-primary" %>
+      <%#= link_to "Cancel", lists_path, class: "btn btn-danger"  %>
+  <% end %>
 </div>

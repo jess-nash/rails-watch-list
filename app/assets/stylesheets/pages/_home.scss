@@ -1,16 +1,14 @@
 // Specific CSS for your home-page
-.lists-collection {
-  padding-top: 20px;
+.container {
+  width: 1200px;
+  margin-top: 2em;
 }
 
-.list-header {
-  padding: 15px;
+.page-header-spaced {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   h1 {
-    text-align: left;
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
@@ -48,20 +46,52 @@
 }
 
 
-.new-list-flex-container {
+// .new-list-flex-container {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .new-list-container {
+//   background: rgba(254, 241, 202, 0.409);
+//   border: 1px #65625b73 solid;
+//   padding: 20px;
+//   margin: 20px;
+//   width: 35rem;
+
+//   .new-list {
+//     padding: 15px;
+//     width: 100%;
+//   }
+// }
+
+.form-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  padding: 24px;
+  width: 100%;
 }
 
-.new-list-container {
-  background: rgba(254, 241, 202, 0.409);
-  border: 1px #65625b73 solid;
-  padding: 20px;
-  margin: 20px;
-  width: 40rem;
+.form-styled {
+  background-color: #c22e04;
+  color: #eee;
+  border-radius: 2px;
+  border: 1px solid #591607;
+  padding: 32px;
+  width: 50%;
+}
 
-  .new-list {
-    padding: 15px;
-    width: 100%;
-  }
+.card-movie-overview {
+  background-color: #eee;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  overflow-y: auto;
+  transition: transform 0.5s ease-in;
 }

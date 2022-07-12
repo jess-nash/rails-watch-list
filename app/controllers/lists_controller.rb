@@ -1,7 +1,8 @@
 class ListsController < ApplicationController
   before_action :find_list, only: [ :show, :edit, :update, :destroy ]
   def index
-    @lists = List.all
+    @list = List.new
+    @lists = List.all # to make new list in list index page
   end
 
   def show
