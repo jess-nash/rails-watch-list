@@ -21,10 +21,10 @@
             <div class="flex-box">
               <h2 class="list-name"><%= list.name %></h2>
               <p class="list-movie-count">
-                <% if @list.bookmarks.count == 1 %>
-                  <%= @list.bookmarks.count %> movie
+                <% if list.bookmarks.count == 1 %>
+                  <%= list.bookmarks.count %> movie
                 <% else %>
-                  <%= @list.bookmarks.count %> movies
+                  <%= list.bookmarks.count %> movies
                 <% end %>
               </p>
             </div>
