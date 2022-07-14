@@ -10,3 +10,9 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.navbar-brand:hover img{
+  /*customizable*/
+  transition: 0.2s ease-out;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/777/777242.png);
+}
