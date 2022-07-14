@@ -1,11 +1,14 @@
-<div class="review-form">
-  <h1>Make a new bookmark</h1>
-  <div class="form">
-    <%= simple_form_for [ @list, @bookmark ] do |b| %>
-      <%= b.association :movie %>
-      <%= b.input :comment, placeholder: 'Bookmark comment' %>
-      <%= b.submit class: "btn btn-primary" %>
-    <% end %>
-    <%#= link_to "Cancel", lists_path, class: "btn btn-danger"  %>
+
+<div class="review-form-container">
+  <div class="review-form">
+    <h1>Make a new bookmark</h1>
+    <div class="form">
+      <%= simple_form_for [ @list, @bookmark ] do |b| %>
+        <%= b.association :movie %>
+        <%= b.input :comment, placeholder: 'Bookmark comment' %>
+        <%= b.submit class: "btn btn-primary" %>
+      <% end %>
+      <%#= link_to "Cancel", lists_path, class: "btn btn-danger"  %>
+    </div>
   </div>
 </div>
