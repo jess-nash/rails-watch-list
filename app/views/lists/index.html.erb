@@ -17,7 +17,7 @@
     <div class="list-card-container">
       <% @lists.each do |list| %>
         <%= link_to list_path(list) do %>
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= @list.photo.attached? ? cl_image_path(@list.photo.key, height: 300, crop: :fill) : image_tag("https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")%>')">
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= list.photo.attached? ? cl_image_path(list.photo.key, height: 300, crop: :fill) : image_tag("https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")%>')">
             <div class="flex-box">
               <h2 class="list-name"><%= list.name %></h2>
               <p class="list-movie-count">
