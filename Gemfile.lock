@@ -272,7 +272,6 @@ DEPENDENCIES
   sass-rails (>= 6)
   simple_form!
   spring
-  sprockets (~> 3.7.2)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
