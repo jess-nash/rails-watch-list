@@ -1,8 +1,8 @@
 databases:
   - name: postgres
     ipAllowList: []
-    databaseName: rails-watch-list
-    user: rails-watch-list
+    databaseName: rails_watch_list
+    user: rails_watch_list
 
 services:
   - type: web
