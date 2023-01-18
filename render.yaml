@@ -6,7 +6,7 @@ databases:
 
 services:
   - type: web
-    name: rails-watch-list
+    name: rails_watch_list
     env: ruby
     buildCommand: "./render-build.sh"
     startCommand: "bundle exec rails s"
