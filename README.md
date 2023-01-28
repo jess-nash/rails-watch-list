@@ -6,6 +6,7 @@
 
 * [Introduction](#introduction)
 * [Features](#features)
+* [Technologies](#technologies)
 * [Setup](#setup)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
@@ -21,22 +22,30 @@
 - create movies lists with the option to upload a personalized photo for the list
 - add movies with your review to your lists
 
+## Technologies
+- Built with: Ruby on Rails (Ruby -v 3.0.3)
+- Front-end: SASS, vani
+- Frameworks: Bootstrap
+- Database: PostgreSQL
+- API: Cloudinary to store images
+
+
 ## Setup
 ### Install gems
 ```
 bundle install
 ```
-Install JS packages
+<!-- Install JS packages
 ```
 yarn install
-```
+``` -->
 
 ### ENV Variables
 Create `.env` file
 ```
 touch .env
 ```
-Inside `.env`, set these variables. For any APIs, see group Slack channel.
+Inside `.env`, set these variables. 
 ```
 CLOUDINARY_URL=your_own_cloudinary_url_key
 ```
