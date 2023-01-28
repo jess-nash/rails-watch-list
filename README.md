@@ -1,22 +1,17 @@
 # movies-n-chill
 > A simple rails movie watch list
+
 > Live demo [_here_](https://movies-n-chill.onrender.com/).
 
 <img width="500" height="200" alt="Screenshot 2023-01-28 at 7 54 21 PM" src="https://user-images.githubusercontent.com/97200803/215262866-d5314704-14d9-4b02-a11d-fe74037d3cac.png">
 
-* [Introduction](#introduction)
+
 * [Features](#features)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 
-
-## Introduction
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
 
 ## Features
 - create movies lists with the option to upload a personalized photo for the list
