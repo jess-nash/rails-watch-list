@@ -11,6 +11,14 @@
 @import "components/index"; // imports ALL imports inside _index.scss
 @import "pages/index";
 
+body {
+background-color: black;
+}
+
 a {
   text-decoration: none;
+}
+
+a:hover {
+  color: $movie-red;
 }

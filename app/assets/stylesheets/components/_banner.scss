@@ -1,7 +1,11 @@
 .banner {
-  background-size: cover;
+  background-size: 100% auto;
   background-position: center;
   padding: 150px 0;
+  // position: relative;
+  // top: -35px;
+  // z-index: -1;
+  // height: 400px;
 
   h1 {
     margin: 0;

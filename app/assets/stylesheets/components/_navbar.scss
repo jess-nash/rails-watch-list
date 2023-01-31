@@ -1,13 +1,32 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
-  background: white;
+  position: sticky;
+  top: 0;
+  height: 65px;
+  z-index: 1;
+  background-image: linear-gradient(black 55%, transparent);
+
+  // .container-fluid {
+  //   position: absolute;
+  //   top: 0;
+  // }
+
 }
 
-.navbar-lewagon .navbar-collapse {
+.nav-link {
+  color: white;
+
+}
+
+.nav-link:hover {
+  color: $movie-red;
+}
+
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar .navbar-brand img {
   width: 40px;
 }
 

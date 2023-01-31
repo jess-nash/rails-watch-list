@@ -16,7 +16,7 @@ Movie.destroy_all
 # List.destroy_all
 
 # the Le Wagon copy of the API
-url = 'http://tmdb.lewagon.com/movie/top_rated'
+url = 'http://tmdb.lewagon.com/movie/now_playing'
 response = JSON.parse(URI.open(url).read)
 
 response['results'].each do |movie_hash|
