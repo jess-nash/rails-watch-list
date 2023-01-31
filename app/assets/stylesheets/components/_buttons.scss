@@ -1,13 +1,13 @@
 .btn-flat {
   padding: 16px 24px;
   border-radius: 4px;
-  background: #c22d05;
+  background: $movie-red;
   transition: background 0.3s ease;
   font-size: 15px;
 }
 
 .btn-flat:hover {
-  background: #932204;
+  background: $movie-red;
 }
 
 .btn {

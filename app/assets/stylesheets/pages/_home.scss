@@ -39,30 +39,13 @@
 .bookmarks-container-right {
   width: 400px;
   padding: 15px;
+  background-color: #a82405;
+  padding: 15px;
 
   .list-actions {
   padding: 15px;
   }
 }
-
-
-// .new-list-flex-container {
-//   display: flex;
-//   justify-content: center;
-// }
-
-// .new-list-container {
-//   background: rgba(254, 241, 202, 0.409);
-//   border: 1px #65625b73 solid;
-//   padding: 20px;
-//   margin: 20px;
-//   width: 35rem;
-
-//   .new-list {
-//     padding: 15px;
-//     width: 100%;
-//   }
-// }
 
 .form-container {
   display: flex;
@@ -94,4 +77,10 @@
   transform: translateY(101%);
   overflow-y: auto;
   transition: transform 0.5s ease-in;
+}
+
+.list-actions {
+  position: absolute;
+  top: -90px;
+  right: 12px;
 }
