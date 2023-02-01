@@ -7,10 +7,11 @@
 
 .cards-bookmarks {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   grid-gap: 16px;
   justify-content: flex-start;
-  width: 816px;
+  width: 1200px;
 }
 
 .card-category {
@@ -24,6 +25,7 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
   h1, h2 {
     font-weight: bold;
     font-size: 32px;
@@ -34,7 +36,6 @@
 }
 
 .card-category:hover {
-  /*customizable*/
   transition: 0.2s ease-out;
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -43,16 +44,29 @@
 .card-movie {
   overflow: hidden;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  width: 25rem;
+  box-shadow: 0 0 15px $movie-red;
+  // border: 1px solid white;
+  width: 18rem;
+  transition: 0.2s ease-out;
 
   > img {
-    height: 150px;
-    width: 100%;
+    // height: 150px;
+    // width: 100%;
     object-fit: cover;
   }
-
 }
+
+.card-movie:hover {
+  transition: 0.2s ease-out;
+  // transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
+
+  // .card-movie:hover img {
+  //   transform: scale(1.5)
+  // }
+}
+
 .card-movie-infos {
   padding: 12px;
 }
