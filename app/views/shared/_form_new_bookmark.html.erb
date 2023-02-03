@@ -1,4 +1,4 @@
-<div class="form">
+<div class="form bookmark-form">
   <%= simple_form_for [ @list, @bookmark ] do |b| %>
     <%= b.association :movie %>
     <%= b.input :comment, placeholder: 'Bookmark comment' %>
