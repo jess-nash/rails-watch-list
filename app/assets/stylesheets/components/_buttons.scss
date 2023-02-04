@@ -1,19 +1,32 @@
-.btn-flat {
-  padding: 16px 24px;
-  border-radius: 4px;
-  background: $movie-red;
-  transition: background 0.3s ease;
-  font-size: 15px;
-}
-
-.btn-flat:hover {
-  background: $movie-red;
-}
-
 .btn {
     color: white;
+    transition: background 0.3s ease;
+    font-size: 15px;
+    border-radius: 4px;
   }
 
-  .delete-btn {
-    background-color: $movie-red;
+  .btn-flat {
+  padding: 16px 24px;
+  background: $movie-red;
+
+  .btn-flat:hover {
+    background: darkred;
+    color: white;
   }
+}
+
+.btn-danger {
+  background-color: darkred;
+  border-color: darkred;
+
+  .btn-danger:hover {
+    background-color: $movie-red;
+    border-color: $movie-red;
+
+    color: white;
+  }
+}
+
+.edit-btn {
+
+}
